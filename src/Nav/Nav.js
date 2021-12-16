@@ -1,15 +1,16 @@
 import React, { useState, useRef, useEffect } from "react";
 import Icon from "../Icon/Icon";
 import { FiMenu } from "react-icons/fi";
-import "./links";
 import links from "./links";
 import SingleLink from "./SingleLink";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [isShow, setIsShow] = useState(false);
   const [windowWidth, setWindowWidth] = useState(Number(window.innerWidth));
   const linksContainerRef = useRef(null);
   const linksRef = useRef(null);
+  const { pathname } = useLocation();
   useState(() => {
     const handleResize = () => {
       setWindowWidth((prev) => {
@@ -34,7 +35,6 @@ const Navbar = () => {
   useEffect(() => {
     const linksHeight = linksRef.current.getBoundingClientRect().height;
 
-    console.log(linksRef.current, windowWidth);
     if (windowWidth >= 640) {
       linksContainerRef.current.style.height = "3rem";
     } else {
@@ -47,11 +47,13 @@ const Navbar = () => {
   }, [isShow, windowWidth]);
 
   return (
-    <header className="fixed top-0 min-h-12 z-10 w-full">
+    <header className="fixed top-0 min-h-12 z-50 w-full">
       <nav className="relative text-white flex flex-col sm:flex-row sm:justify-between bg-gray-900 ">
         {/*Nav Header */}
         <div className="flex items-center justify-between w-full my-auto h-12">
-          <Icon />
+          <Link to="/">
+            <Icon />
+          </Link>
           <FiMenu
             className={`m-2 text-xl cursor-pointer transition-transform transform  duration-300 hover:scale-125 sm:hidden ${
               isShow ? "rotate-90" : ""
@@ -77,6 +79,8 @@ const Navbar = () => {
                   className=""
                   path={item.url}
                   name={item.name}
+                  id={item.id}
+                  disabled={item.disbled}
                   key={index}
                   closeMenu={closeMenu}
                 />

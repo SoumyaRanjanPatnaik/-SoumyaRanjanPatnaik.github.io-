@@ -1,10 +1,8 @@
 import React from "react";
 import { useLocation, NavLink } from "react-router-dom";
 
-const SingleLink = ({ path, name, closeMenu }) => {
+const SingleLink = ({ path, name, closeMenu, id }) => {
   const { pathname } = useLocation();
-  console.log(path);
-  console.log(pathname);
   return (
     <li className="block group relative list-none ">
       <NavLink

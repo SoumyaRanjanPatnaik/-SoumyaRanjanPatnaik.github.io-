@@ -1,40 +1,32 @@
-import { FaFacebook, FaGithub, FaInstagram } from "react-icons/fa";
-import React from "react";
 const links = [
   {
     name: "Home",
     url: "/",
+    id: "home",
+    disbled: false,
   },
   {
     name: "About",
     url: "/about",
+    id: "about",
+    disbled: false,
   },
   {
     name: "Resume",
     url: "/resume",
+    id: "resume",
+    disbled: false,
   },
   {
     name: "Contact",
     url: "/contact",
-  },
-];
-
-export const social = [
-  {
-    name: "GitHub",
-    icon: <FaGithub />,
+    id: "contact",
+    disbled: false,
   },
   {
-    name: "Facebook",
-    icon: <FaFacebook />,
-  },
-  {
-    name: "Instagram",
-    icon: <FaInstagram />,
-  },
-  {
-    name: "Facebook",
-    icon: <FaFacebook />,
+    name: "Blog",
+    url: "/blog",
+    disbled: false,
   },
 ];
 export default links;

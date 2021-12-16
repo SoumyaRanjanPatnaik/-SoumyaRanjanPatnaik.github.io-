@@ -5,8 +5,11 @@ module.exports = {
     extend: {
       animation: {
         "spin-slow": "spin 9s linear infinite",
-        "move-forward": "move-forward 10s linear infinite",
-        "move-reverse": "move-reverse 10s linear infinite",
+        "move-forward": "move-forward 10s 1s linear infinite",
+        "move-reverse": "move-reverse 10s 1s linear infinite",
+        "divider-rotate": "divider-rotate 20s linear infinite",
+        "fade-in": "fade-in 500ms linear",
+        "fade-out": "fade-out 500ms linear",
       },
       scale: {
         30: "0.3",
@@ -14,6 +17,9 @@ module.exports = {
     },
     minHeight: {
       12: "3rem",
+      "4/5": "80%",
+      screen: "100vh",
+      "5/6": "88%",
     },
   },
   variants: {
@@ -21,5 +27,5 @@ module.exports = {
       scale: ["group-hover"],
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
 };

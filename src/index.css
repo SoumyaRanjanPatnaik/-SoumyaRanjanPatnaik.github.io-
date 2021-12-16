@@ -9,23 +9,46 @@
   @apply box-border;
 }
 
-.Earth {
-  width: 150px;
-  height: 150px;
-  background: url(https://1.bp.blogspot.com/-UUXaK5GCj-k/UcsKJRMgkVI/AAAAAAAACfM/sePP_H08JTQ/s1600/1.jpg);
-  border-radius: 100%;
-  background-size: 380px;
+:root {
+  --scroll-text-translate-amount: 0%;
 }
 
 .text__hollow {
-  -webkit-text-stroke: 1px #556;
-  @apply text-gray-900;
+  -webkit-text-stroke: 1px #555;
+  -webkit-text-stroke-width: 2px;
+}
+
+.prev-slider {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.next-slider {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.curr-slider {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.snappedElement {
+  scroll-snap-align: center;
+}
+html,
+body {
+  height: 100vh;
+  overflow: hidden;
 }
 
 @keyframes move-forward {
   0% {
-    opacity: 1;
+    opacity: 0;
     transform: translateX(-100%);
+  }
+  10% {
+    opacity: 1;
   }
 
   90% {
@@ -34,20 +57,48 @@
 
   100% {
     opacity: 0;
-    transform: translateX(5%);
+    transform: translateX(100vh);
   }
 }
 
 @keyframes move-reverse {
   0% {
+    opacity: 0;
+    transform: translateX(100vh);
+  }
+  10% {
     opacity: 1;
-    transform: translateX(100%);
   }
   90% {
     opacity: 1;
   }
   100% {
     opacity: 0;
-    transform: translateX(-5%);
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (min-height: 600px) {
+  .snapY {
+    scroll-snap-type: y mandatory;
+    scroll-snap-stop: always;
   }
 }
