@@ -45,8 +45,8 @@ function App() {
   return (
     <windowContext.Provider value={windowDim}>
       <div
-        className={`h-screen overflow-y-hidden overflow-x-hidden scrollbar scrollbar-thin scrollbar-track-white  scrollbar-thumb-gray-400 ${
-          windowDim.height >= 400 && "snapY sm:overflow-y-hidden"
+        className={`h-screen overflow-y-auto overflow-x-hidden scrollbar scrollbar-thin scrollbar-track-transparent  scrollbar-thumb-gray-400 ${
+          windowDim.height >= 500 && "snapY sm:overflow-y-hidden"
         }`}
         dir="ltr"
       >

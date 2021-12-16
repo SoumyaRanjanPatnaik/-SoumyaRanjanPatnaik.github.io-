@@ -1,17 +1,18 @@
 import React, { useContext } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import windowContext from "./windowContext";
 
 const ScrollDown = ({ color, url, text }) => {
   const setUrl = useNavigate();
   const { height } = useContext(windowContext);
+    const currUrl = useLocation();
   return (
     <div
       className={`${
-        height < 450 ? "" : ""
-      } absolute flex bottom-5 w-full justify-center cursor-pointer visible sm:hidden text-${
+        height < 450 ? "hidden" : ""
+      } absolute flex ${currUrl==="/about" && "bottom-5"} bottom-1 w-full justify-center cursor-pointer visible sm:hidden text-${
         color || "white"
-      } } text-lg ${"animate-bounce"} mb-5  font-bold`}
+      } } text-lg mb-5  font-bold`}
       onClick={() => {
         setUrl(url || "/about");
       }}

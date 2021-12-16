@@ -3,12 +3,12 @@ import social from "./Social";
 
 const SocialLinks = () => {
   return (
-    <div className="w-full flex justify-center cursor-pointer rela ">
+    <div className="flex justify-center w-full cursor-pointer rela ">
       {social.map((item, index) => {
         return (
           <a
             href={item.url}
-            className=" group text-gray-700 text-2xl sm:text-xl transition-all mt-2 mb-3 p-2 hover:bg-blue-50 rounded-full"
+            className="px-2 mt-2 mb-2 text-2xl text-gray-700 rounded-full group sm:text-xl transition-all hover:bg-blue-50"
             key={index}
           >
             {item.icon}
