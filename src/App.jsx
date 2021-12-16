@@ -3,14 +3,13 @@ import Navbar from "./Nav/Nav";
 import { HomeDark } from "./Home/Home";
 import About from "./About/About";
 import Resume from "./Resume/Resume";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import links from "./Nav/links";
 import { useEffect, useRef, useState } from "react";
 import windowContext from "./windowContext";
 
 function App() {
   const currUrl = useLocation();
-  const setUrl = useNavigate();
   const [windowDim, setWindowDim] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
@@ -31,7 +30,6 @@ function App() {
     };
   }, []);
   useEffect(() => {
-    if (windowDim.height >= 400) {
       const curr_id = links.find((item) => item.url === currUrl.pathname)?.id;
       const elementDOM = document.getElementById(curr_id);
       if (elementDOM) {
@@ -40,13 +38,12 @@ function App() {
           block: "center",
         });
       }
-    }
   }, [currUrl, windowDim]);
   return (
     <windowContext.Provider value={windowDim}>
       <div
-        className={`h-screen overflow-y-auto overflow-x-hidden scrollbar scrollbar-thin scrollbar-track-transparent  scrollbar-thumb-gray-400 ${
-          windowDim.height >= 500 && "snapY sm:overflow-y-hidden"
+        className={`h-screen overflow-y-hidden overflow-x-hidden scrollbar scrollbar-thin scrollbar-track-transparent  scrollbar-thumb-gray-400 ${
+            windowDim.height >= 500 ? "snapY sm:overflow-y-hidden":"overscroll-y-auto"
         }`}
         dir="ltr"
       >

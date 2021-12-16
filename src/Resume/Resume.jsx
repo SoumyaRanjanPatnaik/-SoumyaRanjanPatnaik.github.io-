@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
 import windowContext from "../windowContext";
-import ScrollDown from "../ScrollDown";
 
 const resumeItems = [
   "Skills",
@@ -10,7 +9,7 @@ const resumeItems = [
   "Publications",
 ];
 
-const Resume = (props) => {
+const Resume = () => {
   const [currSelected, setCurrSelected] = useState(0);
   const [currItem, setCurrItem] = useState(currSelected);
   const posRef = useRef({ top: 0, left: 0 });
@@ -54,13 +53,14 @@ const Resume = (props) => {
 
           <div
             id="tabs-container"
-            className="relative flex flex-wrap justify-center flex-grow-0 flex-shrink-0 px-2 mt-2 overflow-auto sm:mt-5 sm:flex-col sm:justify-center sm:overflow-x-hidden scrollbar-thin gap-1"
+            className="relative flex flex-wrap justify-center flex-grow-0 flex-shrink-0 px-2 mt-2 overflow-hidden sm:mt-5 sm:flex-col sm:justify-center sm:overflow-x-hidden scrollbar-thin"
           >
             <div
               id="hover-box"
-              className="absolute top-0 bottom-0 left-0 z-0 w-1/6 h-3 h-8 bg-blue-400 rounded sm:w-full sm:rounded transition-all"
+              className="absolute top-0 bottom-0 left-0 z-0 w-1/6 h-3 h-8 bg-blue-400 rounded sm:w-full sm:rounded duration-150 transition-all"
               style={{
                 transform: `translate(${posRef.current["left"]}px, ${posRef.current["top"]}px)`,
+                  transitionTimingFunction: "cubic-bezier(.3,.6,.9,1.0)",
                 ...currDim,
               }}
             />
@@ -99,7 +99,6 @@ const Resume = (props) => {
           </div>
         </div>
       </div>
-      <ScrollDown url="/about" text="Scroll Up" color="gray-700" />
     </section>
   );
 };

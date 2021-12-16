@@ -10,9 +10,9 @@ export const HomeDark = ({ refContainer }) => {
     <section
       id="home"
       ref={refContainer}
-      className="home-dark snappedElement relative h-screen flex flex-col justify-center items-stretch  bg-gray-900 transition-all w-full overflow-hidden  z-10"
+      className="relative z-10 flex flex-col items-stretch justify-center w-full h-screen overflow-hidden bg-gray-900 home-dark snappedElement transition-all"
     >
-      <div className="select-none block text-gray-300 text-2xl sm:text-4xl text-center relative -top-5 ">
+      <div className="relative block text-2xl text-center text-gray-300 select-none sm:text-4xl -top-5 ">
         <span className="flex justify-center">
           I'm {isShowArticle && "A" + (isVowel ? "n" : "")}
         </span>

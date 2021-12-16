@@ -10,7 +10,6 @@ const Navbar = () => {
   const [windowWidth, setWindowWidth] = useState(Number(window.innerWidth));
   const linksContainerRef = useRef(null);
   const linksRef = useRef(null);
-  const { pathname } = useLocation();
   useState(() => {
     const handleResize = () => {
       setWindowWidth((prev) => {
@@ -47,10 +46,10 @@ const Navbar = () => {
   }, [isShow, windowWidth]);
 
   return (
-    <header className="fixed top-0 min-h-12 z-50 w-full">
-      <nav className="relative text-white flex flex-col sm:flex-row sm:justify-between bg-gray-900 ">
+    <header className="fixed top-0 z-50 w-full min-h-12">
+      <nav className="relative flex flex-col text-white bg-gray-900 sm:flex-row sm:justify-between ">
         {/*Nav Header */}
-        <div className="flex items-center justify-between w-full my-auto h-12">
+        <div className="flex items-center justify-between w-full h-12 my-auto">
           <Link to="/">
             <Icon />
           </Link>
@@ -65,12 +64,12 @@ const Navbar = () => {
         </div>
         {/* Nav Links Container*/}
         <div
-          className="w-full sm:w-auto overflow-hidden sm:overflow-visible transition-all"
+          className="w-full overflow-hidden sm:w-auto sm:overflow-visible transition-all"
           ref={linksContainerRef}
         >
           {/* Links */}
           <ul
-            className="w-full flex flex-col sm:flex-row sm:h-full items-stretch sm:mr-3"
+            className="flex flex-col items-stretch w-full sm:flex-row sm:h-full sm:mr-3"
             ref={linksRef}
           >
             {links.map((item, index) => {

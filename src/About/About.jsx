@@ -1,8 +1,6 @@
-import React, {useContext, useEffect, useState} from "react";
+import React  from "react";
 import SocialLinks from "./SocialLinks";
 import PassportPhoto from "../assets/PassportPhoto.jpg";
-import ScrollDown from "../ScrollDown";
-import windowContext from "../windowContext";
 
 const About = (props) => {
   return (
@@ -53,7 +51,6 @@ const About = (props) => {
           </button>
         </div>
       </div>
-        <ScrollDown color="gray-600" url="/resume"/>
     </section>
   );
 };

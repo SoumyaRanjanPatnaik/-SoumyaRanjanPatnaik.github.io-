@@ -32,7 +32,7 @@ const TextScrollY = ({ scrollText, vowel, article, ...rest }) => {
         vowel(false);
       }
     }
-  }, [currId]);
+  }, [currId, article, scrollText, vowel]);
   // Render the required elements
   const renderElements = scrollText.reduce((prev, curr, id) => {
     const len = scrollText.length;
@@ -49,7 +49,7 @@ const TextScrollY = ({ scrollText, vowel, article, ...rest }) => {
   };
 
   return (
-    <div className="select-none relative flex justify-center h-11 sm:h-20 overflow-hidden w-full">
+    <div className="relative flex justify-center w-full overflow-hidden select-none h-11 sm:h-20">
       {renderElements.map((item, index) => {
         return (
           <h3
