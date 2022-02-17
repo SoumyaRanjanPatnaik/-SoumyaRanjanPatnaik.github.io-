@@ -1,23 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.ad3eb43f.chunk.css",
-    "main.js": "/static/js/main.a74ab244.chunk.js",
-    "main.js.map": "/static/js/main.a74ab244.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.ae5e4814.js",
-    "runtime-main.js.map": "/static/js/runtime-main.ae5e4814.js.map",
-    "static/js/2.c626cad9.chunk.js": "/static/js/2.c626cad9.chunk.js",
-    "static/js/2.c626cad9.chunk.js.map": "/static/js/2.c626cad9.chunk.js.map",
-    "static/js/3.b643f7ab.chunk.js": "/static/js/3.b643f7ab.chunk.js",
-    "static/js/3.b643f7ab.chunk.js.map": "/static/js/3.b643f7ab.chunk.js.map",
+    "main.css": "/static/css/main.6226d223.css",
+    "main.js": "/static/js/main.462eba9a.js",
+    "static/js/787.ce689f02.chunk.js": "/static/js/787.ce689f02.chunk.js",
+    "static/media/PassportPhoto.jpg": "/static/media/PassportPhoto.054e7f1b7a80a0679125.jpg",
     "index.html": "/index.html",
-    "static/css/main.ad3eb43f.chunk.css.map": "/static/css/main.ad3eb43f.chunk.css.map",
-    "static/js/2.c626cad9.chunk.js.LICENSE.txt": "/static/js/2.c626cad9.chunk.js.LICENSE.txt",
-    "static/media/PassportPhoto.054e7f1b.jpg": "/static/media/PassportPhoto.054e7f1b.jpg"
+    "main.6226d223.css.map": "/static/css/main.6226d223.css.map",
+    "main.462eba9a.js.map": "/static/js/main.462eba9a.js.map",
+    "787.ce689f02.chunk.js.map": "/static/js/787.ce689f02.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.ae5e4814.js",
-    "static/js/2.c626cad9.chunk.js",
-    "static/css/main.ad3eb43f.chunk.css",
-    "static/js/main.a74ab244.chunk.js"
+    "static/css/main.6226d223.css",
+    "static/js/main.462eba9a.js"
   ]
 }
