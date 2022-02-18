@@ -10,7 +10,8 @@ const ScrollDown = ({ color, url, text }) => {
     <div
       className={`${
         height < 450 ? "hidden" : ""
-      } absolute flex ${currUrl==="/about" && "bottom-5"} bottom-1 w-full justify-center cursor-pointer visible sm:hidden text-${
+      } absolute flex ${currUrl==="/about" && "bottom-5"} bottom-1
+       w-full justify-center cursor-pointer visible sm:hidden text-${
         color || "white"
       } } text-lg mb-5  font-bold`}
       onClick={() => {

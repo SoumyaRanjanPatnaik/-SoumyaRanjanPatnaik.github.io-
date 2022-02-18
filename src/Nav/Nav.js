@@ -63,12 +63,15 @@ const Navbar = () => {
                 </div>
                 {/* Nav Links Container*/}
                 <div
-                    className="w-full overflow-hidden sm:w-auto sm:overflow-visible transition-all"
+                    className="w-full overflow-hidden sm:w-auto 
+                    sm:overflow-visible transition-all"
                     ref={linksContainerRef}
                 >
                     {/* Links */}
                     <ul
-                        className="flex flex-col text-center items-stretch w-full sm:flex-row sm:h-full sm:mr-3"
+                        className="flex flex-col text-center 
+                        items-stretch w-full sm:flex-row sm:h-full
+                        sm:mr-3"
                         ref={linksRef}
                     >
                         {links.map((item, index) => {
