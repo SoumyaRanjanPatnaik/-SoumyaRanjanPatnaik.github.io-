@@ -63,7 +63,7 @@ const Navbar = () => {
               setIsShow(!isShow);
             }}
           >
-            <span className="text-gray-100 font-semibold">Menu</span>
+            <span className="text-gray-100 font-semibold">Navigate</span>
             <FiMenu
               className={`m-2 text-xl sm:hidden transition-transform
               transform  duration-300 ${isShow ? "rotate-90" : ""}`}
