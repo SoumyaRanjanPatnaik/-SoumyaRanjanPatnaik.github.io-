@@ -49,7 +49,7 @@ const Navbar = () => {
     <header className="fixed top-0 z-50 w-full min-h-12">
       <nav
         className="relative px-2 py-2 sm:py-3 md:px-3 lg:px-4  flex flex-col 
-      text-white bg-gray-900 sm:flex-row sm:justify-between "
+      text-white bg-gray-900 sm:flex-row sm:justify-between overflow-hidden"
       >
         {/*Nav Header */}
         <div className="flex items-center justify-between w-full h-12 my-auto">
@@ -57,8 +57,8 @@ const Navbar = () => {
             <Icon />
           </Link>
           <div
-            className=" absolute right-3  sm:translate-y-72 flex items-center cursor-pointer transition
-            transform  duration-300 hover:scale-110 "
+            className=" absolute right-3  sm:translate-y-72 flex items-center 
+            cursor-pointer transition transform  duration-300 hover:scale-110 "
             onClick={() => {
               setIsShow(!isShow);
             }}

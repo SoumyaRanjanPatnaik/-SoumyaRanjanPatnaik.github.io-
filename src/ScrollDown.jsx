@@ -5,15 +5,15 @@ import windowContext from "./windowContext";
 const ScrollDown = ({ color, url, text }) => {
   const setUrl = useNavigate();
   const { height } = useContext(windowContext);
-    const currUrl = useLocation();
+  const currUrl = useLocation();
   return (
     <div
-      className={`${
-        height < 450 ? "hidden" : ""
-      } absolute flex ${currUrl==="/about" && "bottom-5"} bottom-1
-       w-full justify-center cursor-pointer visible sm:hidden text-${
-        color || "white"
-      } } text-lg mb-5  font-bold`}
+      className={`${height < 450 ? "hidden" : ""} absolute flex ${
+        currUrl === "/about" && "bottom-5"
+      } bottom-1
+       w-full justify-center cursor-pointer visible sm:hidden sm:opacity-0 transition-none text-${
+         color || "white"
+       } } text-lg mb-5  font-bold`}
       onClick={() => {
         setUrl(url || "/about");
       }}
