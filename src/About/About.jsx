@@ -42,9 +42,9 @@ const About = (props) => {
               <strong> machine learning</strong>.{" "}
             </p>
           </div>
-          <button class="flex group relative m-auto justify-center mt-5 bg-blue-500 hover:bg-blue-200 text-gray-50 font-bold py-2 px-4 rounded-lg w-full items-center cursor-not-allowed mb-2">
+          <button className="flex group relative m-auto justify-center mt-5 bg-blue-500 hover:bg-blue-200 text-gray-50 font-bold py-2 px-4 rounded-lg w-full items-center cursor-not-allowed mb-2">
             <svg
-              class="fill-current w-4 h-4 mr-2"
+              className="fill-current w-4 h-4 mr-2"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
             >

@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useRef, useState } from "react";
 import windowContext from "../windowContext";
 import handleHoverBox from "./ResumeHeader/handlehoverBox";
 import ResumeHeader from "./ResumeHeader";
-import ResumeSection from "./ResumeSection";
+import ResumeSection from "./ResumeSection/ResumeSection";
 
 const Resume = () => {
   // States
@@ -17,7 +17,7 @@ const Resume = () => {
     >
       {/*Resume Glass Container*/}
       <div
-        className="w-5/6 max-w-3xl overflow-hidden bg-gray-500 shadow-lg h-4/5 grid 
+        className="w-[97%] max-w-3xl overflow-hidden bg-gray-500 shadow-lg h-[80%] grid 
             grid-rows-5 sm:grid-rows-2 sm:grid-cols-12 md:grid-cols-12 sm:w-full 
             bg-opacity-5 ring-inset ring-2 ring-white rounded-3xl backdrop-blur 
             md:max-w-6xl "
