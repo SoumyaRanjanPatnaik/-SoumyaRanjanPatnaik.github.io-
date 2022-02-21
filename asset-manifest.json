@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.3da29121.css",
-    "main.js": "/static/js/main.aa25f60e.js",
+    "main.css": "/static/css/main.bd0f98b1.css",
+    "main.js": "/static/js/main.b83076a6.js",
     "static/js/787.ce689f02.chunk.js": "/static/js/787.ce689f02.chunk.js",
     "static/media/PassportPhoto.jpg": "/static/media/PassportPhoto.054e7f1b7a80a0679125.jpg",
     "index.html": "/index.html",
-    "main.3da29121.css.map": "/static/css/main.3da29121.css.map",
-    "main.aa25f60e.js.map": "/static/js/main.aa25f60e.js.map",
+    "main.bd0f98b1.css.map": "/static/css/main.bd0f98b1.css.map",
+    "main.b83076a6.js.map": "/static/js/main.b83076a6.js.map",
     "787.ce689f02.chunk.js.map": "/static/js/787.ce689f02.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3da29121.css",
-    "static/js/main.aa25f60e.js"
+    "static/css/main.bd0f98b1.css",
+    "static/js/main.b83076a6.js"
   ]
 }
