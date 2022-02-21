@@ -14,7 +14,7 @@ const SingleResumeItem = ({
           "bg-blue-200 text-gray-700 sm:shadow-lg shadow-blue-200/30 duration-[400ms]";
       } else {
         cssVal +=
-          "bg-blue-600 text-white sm:shadow-lg shadow-blue-600/50 hover:shadow-blue-400/60 ";
+          "bg-blue-600 text-white shadow-lg shadow-blue-600/40 hover:shadow-blue-400/60 ";
       }
     }
     if (currItem !== currSelected && currItem === index) cssVal += "text-white";
