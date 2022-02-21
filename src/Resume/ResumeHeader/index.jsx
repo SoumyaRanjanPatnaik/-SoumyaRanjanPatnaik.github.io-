@@ -1,4 +1,5 @@
 import TabsContainer from "./TabsContainer";
+import resumeItems from "../resumeItemsList.tsx";
 
 const ResumeHeader = ({ selected, item }) => {
   return (

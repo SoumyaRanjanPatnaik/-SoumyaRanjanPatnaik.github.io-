@@ -1,4 +1,4 @@
-import resumeItems from "./resumeItemsList";
+import resumeItems from "../resumeItemsList.tsx";
 
 const handleHoverBox = (
   windowWidth,

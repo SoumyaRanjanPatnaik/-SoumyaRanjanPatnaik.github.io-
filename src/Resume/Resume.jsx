@@ -1,8 +1,6 @@
-import React, { useContext, useEffect, useRef, useState } from "react";
-import windowContext from "../windowContext";
-import handleHoverBox from "./ResumeHeader/handlehoverBox";
+import React, { useState } from "react";
 import ResumeHeader from "./ResumeHeader";
-import ResumeSection from "./ResumeSection/ResumeSection";
+import ResumeSection from "./ResumeSection/ResumeSection.tsx";
 
 const Resume = () => {
   // States
@@ -17,10 +15,10 @@ const Resume = () => {
     >
       {/*Resume Glass Container*/}
       <div
-        className="w-[97%] max-w-3xl overflow-hidden bg-gray-500 shadow-lg h-[80%] grid 
+        className="w-[97%] max-w-3xl overflow-hidden bg-gray-50 shadow-lg h-[80%] grid 
             grid-rows-5 sm:grid-rows-2 sm:grid-cols-12 md:grid-cols-12 sm:w-full 
-            bg-opacity-5 ring-inset ring-2 ring-white rounded-3xl backdrop-blur 
-            md:max-w-6xl "
+            bg-opacity-20 ring-inset ring-2 ring-white rounded-3xl backdrop-blur 
+            md:max-w-6xl max-h-[650px]"
       >
         <ResumeHeader
           {...{
@@ -28,7 +26,7 @@ const Resume = () => {
             item,
           }}
         />
-        <ResumeSection current={item[0]} />
+        <ResumeSection current={selected[0]} />
       </div>
     </section>
   );

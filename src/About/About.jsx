@@ -22,7 +22,10 @@ const About = (props) => {
           alt=""
         />
         <div className="flex flex-col items-stretch w-5/6 mx-4 gap-3">
-          <h1 className="pb-2 text-2xl font-bold text-center text-gray-900 border-b-4 border-green-200 ">
+          <h1
+            className="pb-2 text-2xl font-bold text-center text-gray-900 border-b-4
+           border-green-200 "
+          >
             About
           </h1>
           <SocialLinks />

@@ -1,4 +1,4 @@
-import resumeItems from "./resumeItemsList";
+import resumeItems from "../resumeItemsList";
 import SingleResumeItem from "./SingleResumeItem";
 import { useContext, useEffect, useRef, useState } from "react";
 import windowContext from "../../windowContext";

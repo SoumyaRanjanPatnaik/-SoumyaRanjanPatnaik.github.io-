@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import TextScrollY from "./TextScrollY";
-import iAmA from "./iAmA";
+import iAmA from "../Config/iAmA";
 import ScrollDown from "../ScrollDown";
 
 export const HomeDark = ({ refContainer }) => {
