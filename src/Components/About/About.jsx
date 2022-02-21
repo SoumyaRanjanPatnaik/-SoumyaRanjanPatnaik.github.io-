@@ -1,12 +1,12 @@
 import React from "react";
 import SocialLinks from "./SocialLinks";
-import PassportPhoto from "../assets/PassportPhoto.jpg";
+import PassportPhoto from "../../Assets/PassportPhoto.jpg";
 
 const About = (props) => {
   return (
     <section
       id="about"
-      className=" relative flex flex-col items-center justify-center
+      className=" absolute flex flex-col items-center justify-center
             min-h-screen py-10 snappedElement bg-gradient-to-br 
             from-red-50 to-green-50"
     >

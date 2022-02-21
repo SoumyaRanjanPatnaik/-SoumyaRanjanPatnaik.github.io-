@@ -26,6 +26,7 @@ const links = [
   {
     name: "Blog",
     url: "/blog",
+    id: "blog",
     disbled: false,
   },
 ];

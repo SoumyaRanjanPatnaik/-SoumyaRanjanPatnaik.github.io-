@@ -1,9 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
-import Icon from "../Icon/Icon";
 import { FiMenu } from "react-icons/fi";
-import links from "../Config/links";
+import links from "../../Config/links";
 import SingleLink from "./SingleLink";
 import { Link } from "react-router-dom";
+import Icon from "../Icon/Icon";
 
 const Navbar = () => {
   const [isShow, setIsShow] = useState(false);

@@ -10,7 +10,7 @@ const Resume = () => {
   return (
     <section
       id="resume"
-      className="relative flex items-center justify-center min-h-screen px-2 pt-12 pb-5 
+      className="absolute flex items-center justify-center min-h-screen px-2 pt-12 pb-5 
             snappedElement sm:px-9 bg-gradient-to-b from-gray-50 to-blue-50 "
     >
       {/*Resume Glass Container*/}

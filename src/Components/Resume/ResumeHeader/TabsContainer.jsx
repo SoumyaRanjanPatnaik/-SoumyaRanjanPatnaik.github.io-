@@ -1,7 +1,7 @@
 import resumeItems from "../resumeItemsList";
 import SingleResumeItem from "./SingleResumeItem";
 import { useContext, useEffect, useRef, useState } from "react";
-import windowContext from "../../windowContext";
+import windowContext from "../../../windowContext";
 import handleHoverBox from "./handlehoverBox";
 
 const TabsContainer = ({ selected, item }) => {

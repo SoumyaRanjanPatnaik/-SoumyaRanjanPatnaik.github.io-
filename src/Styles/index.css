@@ -10,15 +10,6 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-:root {
-  --scroll-text-translate-amount: 0%;
-}
-
-.text__hollow {
-  -webkit-text-stroke: 1px #555;
-  -webkit-text-stroke-width: 2px;
-}
-
 .prev-slider {
   transform: translateY(-100%);
   opacity: 0;
@@ -34,9 +25,6 @@
   opacity: 1;
 }
 
-.snappedElement {
-  scroll-snap-align: center;
-}
 html,
 body {
   height: 100vh;
@@ -59,23 +47,6 @@ body {
   100% {
     opacity: 0;
     transform: translateX(100vh);
-  }
-}
-
-@keyframes move-reverse {
-  0% {
-    opacity: 0;
-    transform: translateX(100vh);
-  }
-  10% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translateX(-100%);
   }
 }
 

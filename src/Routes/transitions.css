@@ -1,0 +1,69 @@
+/* Page slide animations*/
+
+/* Page Enter */
+.page-top-enter {
+  opacity: 0;
+  transform: translateY(10px);
+  z-index: 100;
+}
+.page-top-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 300ms ease-in-out;
+  z-index: 100;
+}
+
+.page-botom-enter {
+  opacity: 0;
+  transform: translateY(-10px);
+  z-index: 100;
+}
+
+.page-bottom-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 300ms ease-in-out;
+  z-index: 100;
+}
+.page > * {
+  position: absolute;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  transform: translate(0, 0);
+}
+
+.pageSlider-enter {
+  z-index: 10;
+  opacity: 40;
+}
+.pageSlider-exit-active {
+  z-index: 1;
+  opacity: 50;
+  transition: all 300ms ease-in-out;
+}
+
+.pageSlider-enter.top {
+  transform: translate3d(0, 100%, 0);
+}
+.pageSlider-enter.bottom {
+  transform: translate3d(0, -100%, 0);
+}
+.pageSlider-exit.top {
+  transform: translate3d(0, -100%, 0);
+}
+.pageSlider-exit.bottom {
+  transform: translate3d(0, 100%, 0);
+}
+.pageSlider-enter.pageSlider-enter-active {
+  transform: translate3d(0, 0, 0);
+  transition: all 300ms ease-in-out;
+  opacity: 100;
+}

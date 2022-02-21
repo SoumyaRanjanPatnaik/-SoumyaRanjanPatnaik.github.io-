@@ -1,5 +1,8 @@
 import { useEffect } from "react";
-import { isSkillColorOn, SkillAttributes } from "../../../Config/resumeSkills";
+import {
+  isSkillColorOn,
+  SkillAttributes,
+} from "../../../../Config/resumeSkills";
 
 const SingleSkill: React.FC<SkillAttributes> = ({
   Icon,
@@ -11,10 +14,6 @@ const SingleSkill: React.FC<SkillAttributes> = ({
   bgEnabled,
   iconProps,
 }) => {
-  const skill_color = color?.split("-").slice(1).join("-");
-  useEffect(() => {
-    console.log(skill_color);
-  });
   return (
     <div
       className="flex p-4 bg-gradient-to-br from-white to-gray-50 
@@ -23,7 +22,7 @@ const SingleSkill: React.FC<SkillAttributes> = ({
       {/* icon  */}
       <div
         className={`flex-shrink-0  h-fit aspect-square ${
-        isSkillColorOn && bgEnabled && bg_color
+          isSkillColorOn && bgEnabled && bg_color
         } p-2 rounded-full shadow-md shadow-gray-400 `}
       >
         <Icon
