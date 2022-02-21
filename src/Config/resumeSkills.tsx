@@ -22,6 +22,7 @@ export interface SkillAttributes {
   bg_color?: string;
   color?: string;
   bgEnabled?: boolean;
+  bar_color?: string;
 }
 
 export const isSkillColorOn: boolean = true;
@@ -32,6 +33,7 @@ export const resumeSkills: SkillAttributes[] = [
     name: "C++",
     skill: 8.7,
     color: "text-blue-700",
+    bar_color: "bg-blue-700",
     className: "scale-105",
   },
   {
@@ -39,12 +41,14 @@ export const resumeSkills: SkillAttributes[] = [
     name: "Java",
     skill: 6.2,
     color: "text-red-600",
+    bar_color: "bg-red-600",
   },
   {
     Icon: FaRust,
     name: "Rust",
     skill: 6.8,
     color: "text-red-700",
+    bar_color: "bg-red-700",
     className: "scale-110",
   },
   {
@@ -52,12 +56,14 @@ export const resumeSkills: SkillAttributes[] = [
     name: "ReactJs",
     skill: 9.3,
     color: "text-cyan-500",
+    bar_color: "bg-cyan-500",
   },
   {
     Icon: ImTree,
     name: "Data Structures and Algorithms",
     skill: 8.5,
     color: "text-white",
+    bar_color: "bg-purple-600",
     bgEnabled: true,
     bg_color: "bg-purple-600",
     className: "scale-75",
@@ -65,6 +71,7 @@ export const resumeSkills: SkillAttributes[] = [
   {
     Icon: ImHtmlFive,
     color: "text-orange-600",
+    bar_color: "bg-orange-600",
     name: "HTML",
     skill: 7.3,
     className: "p-1",
@@ -72,44 +79,51 @@ export const resumeSkills: SkillAttributes[] = [
   {
     Icon: IoLogoCss3,
     color: "text-blue-600",
+    bar_color: "bg-blue-600",
     name: "CSS",
     skill: 7.8,
-  },
-  {
-    Icon: SiTypescript,
-    name: "TypeScript",
-    skill: 8.1,
-    color: "text-blue-500",
-    className: "scale-[0.8] shadow-lg",
   },
   {
     Icon: SiJavascript,
     name: "JavaScript",
     skill: 8.3,
     color: "text-yellow-400",
+    bar_color: "bg-yellow-400",
     className: "bg-gray-700 scale-75",
   },
   {
-    Icon: SiExpress,
-    name: "ExpressJs",
-    skill: 8.4,
-    color: "text-white",
-    bgEnabled: true,
-    bg_color: "bg-gray-700",
+    Icon: SiTypescript,
+    name: "TypeScript",
+    skill: 8.1,
+    color: "text-blue-500",
+    bar_color: "bg-blue-500",
+    className: "scale-[0.8] shadow-lg",
   },
   {
     Icon: SiPython,
     name: "Python",
     skill: 8.0,
     bgEnabled: true,
-    color: "text-[rgb(255,230,10)]",
+    // color: "text-[rgb(255,230,10)]",
+    color: "text-yellow-300",
+    bar_color: "bg-yellow-500",
     bg_color: "bg-blue-600",
+  },
+  {
+    Icon: SiExpress,
+    name: "ExpressJs",
+    skill: 8.4,
+    color: "text-white",
+    bar_color: "bg-gray-700",
+    bgEnabled: true,
+    bg_color: "bg-gray-700",
   },
   {
     Icon: SiPostgresql,
     name: "PostgreSQL",
     skill: 7.9,
     color: "text-gray-200",
+    bar_color: "bg-blue-700",
     bgEnabled: true,
     bg_color: "bg-blue-700",
     className: "p-2 scale-105",
@@ -119,17 +133,20 @@ export const resumeSkills: SkillAttributes[] = [
     name: "MongoDB",
     skill: 7.4,
     color: "text-green-700",
+    bar_color: "bg-green-700",
   },
   {
     Icon: SiNestjs,
     name: "NestJs",
     skill: 7.9,
     color: "text-red-700",
+    bar_color: "bg-red-700",
   },
   {
     Icon: SiArduino,
     name: "Arduino",
     skill: 8.1,
     color: "text-teal-500",
+    bar_color: "bg-teal-500",
   },
 ];

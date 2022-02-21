@@ -18,7 +18,7 @@ const Resume = () => {
         className="w-[97%] max-w-3xl overflow-hidden bg-gray-50 shadow-lg h-[80%] grid 
             grid-rows-5 sm:grid-rows-2 sm:grid-cols-12 md:grid-cols-12 sm:w-full 
             bg-opacity-20 ring-inset ring-2 ring-white rounded-3xl backdrop-blur 
-            md:max-w-6xl max-h-[650px]"
+            md:max-w-6xl max-h-[650px] overflow-x-hidden"
       >
         <ResumeHeader
           {...{

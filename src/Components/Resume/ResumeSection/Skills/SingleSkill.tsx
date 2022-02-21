@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import {
   isSkillColorOn,
   SkillAttributes,
@@ -12,7 +12,7 @@ const SingleSkill: React.FC<SkillAttributes> = ({
   bg_color,
   color,
   bgEnabled,
-  iconProps,
+  bar_color,
 }) => {
   return (
     <div
@@ -33,20 +33,36 @@ const SingleSkill: React.FC<SkillAttributes> = ({
       </div>
       <div className="flex flex-1 flex-col justify-center gap-1">
         <span className="font-semibold text-gray-700">{name}</span>
-        <ProgressBar skill={skillLevel} />
+        <ProgressBar skill={skillLevel} color={color} bar_color={bar_color} />
       </div>
     </div>
   );
 };
 
-const ProgressBar: React.FC<Partial<SkillAttributes>> = ({ skill }) => {
+const ProgressBar: React.FC<Partial<SkillAttributes>> = ({
+  skill,
+  color,
+  bar_color,
+}) => {
+  const [progressVal, setProgressVal] = useState(-100);
+  useEffect(() => {
+    setTimeout(() => {
+      setProgressVal(-100 + ((skill - 2) * 100) / 8);
+    }, 50);
+  }, []);
   return (
     <div className="flex flex-col text-sm gap-0.5">
-      <div className="flex items-center justify-center w-full h-3 bg-gray-200 rounded-full">
+      <div
+        className="relative flex items-center justify-center w-full h-3 bg-gray-200
+       rounded-full overflow-hidden "
+      >
         <div
-          className="w-8 h-2 "
+          id="progress"
+          className={`absolute inset-0 z-50 rounded-full ${
+            bar_color || "bg-green-400"
+          } transition-all duration-1000 ease-in-out`}
           style={{
-            transform: `scale(${skill},1)`,
+            transform: `translateX(${progressVal}%)`,
           }}
         />
       </div>
