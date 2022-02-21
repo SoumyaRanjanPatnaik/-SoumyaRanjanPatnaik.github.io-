@@ -23,7 +23,7 @@ const TabsContainer = ({ selected, item }) => {
   return (
     <div
       id="tabs-container"
-      className="relative flex flex-wrap justify-center flex-grow-0 
+      className="relative flex flex-wrap justify-center flex-grow-0
 				flex-shrink-0 px-2 mt-2 overflow-hidden sm:mt-5 sm:flex-col
 				 sm:justify-center sm:overflow-x-hidden scrollbar-thin sm:h-full"
     >

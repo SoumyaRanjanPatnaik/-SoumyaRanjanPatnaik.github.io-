@@ -7,7 +7,7 @@ const handleHoverBox = (
   posRef,
   setCurrDim
 ) => {
-  if (windowWidth < 640) {
+  if (windowWidth <= 640) {
     return;
   }
   const coordParent = document
