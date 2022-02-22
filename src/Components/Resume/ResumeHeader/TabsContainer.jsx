@@ -29,7 +29,7 @@ const TabsContainer = ({ selected, item }) => {
     >
       <div
         id="hover-box"
-        className={` ${
+        className={`${
           windowWidth < 640 && "hidden"
         } absolute top-0 bottom-0 left-0 z-0 w-1/6 h-3 bg-blue-400 
 					rounded sm:w-full sm:rounded duration-150 transition-transform`}

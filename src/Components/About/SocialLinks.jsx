@@ -1,5 +1,5 @@
 import React from "react";
-import social from "./Social";
+import social from "../../Config/socialLinks";
 
 const SocialLinks = () => {
   return (
@@ -13,10 +13,8 @@ const SocialLinks = () => {
           >
             {item.icon}
           </a>
-          
         );
       })}
-
     </div>
   );
 };

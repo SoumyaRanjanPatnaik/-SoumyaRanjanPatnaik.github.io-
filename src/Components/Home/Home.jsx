@@ -9,7 +9,8 @@ export const Home = () => {
   return (
     <section
       id="home"
-      className="absolute z-10 flex flex-col items-stretch justify-center w-full h-screen overflow-hidden bg-gray-900 home-dark snappedElement transition-all"
+      className="absolute z-10 flex flex-col items-stretch justify-center 
+      w-full h-screen overflow-hidden bg-gray-900 home-dark transition-all"
     >
       <div className="relative block text-2xl text-center text-gray-300 select-none sm:text-4xl -top-5 ">
         <span className="flex justify-center">
