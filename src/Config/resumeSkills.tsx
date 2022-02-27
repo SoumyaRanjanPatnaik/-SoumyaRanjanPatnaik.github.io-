@@ -26,6 +26,7 @@ export interface SkillAttributes {
 }
 
 export const isSkillColorOn: boolean = true;
+export const isProgressColorOn: boolean = true;
 
 export const resumeSkills: SkillAttributes[] = [
   {

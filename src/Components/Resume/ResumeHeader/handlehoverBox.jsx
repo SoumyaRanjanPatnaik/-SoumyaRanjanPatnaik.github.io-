@@ -1,4 +1,4 @@
-import resumeItems from "../resumeItemsList.tsx";
+import resumeItems from "../../../Config/resumeItemsList";
 
 const handleHoverBox = (
   windowWidth,
@@ -14,7 +14,7 @@ const handleHoverBox = (
     .getElementById("tabs-container")
     .getBoundingClientRect();
   const coordChild = document
-    .getElementById(resumeItems[currItem])
+    .getElementById(resumeItems[currItem].name)
     .getBoundingClientRect();
   const hoverBox = document.getElementById("hover-box");
   posRef.current = {

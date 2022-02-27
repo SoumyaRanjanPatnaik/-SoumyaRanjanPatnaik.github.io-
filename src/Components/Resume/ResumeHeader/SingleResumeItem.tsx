@@ -1,4 +1,15 @@
-const SingleResumeItem = ({
+import React from "react";
+import { resumeItemType } from "../../../Config/resumeItemsList";
+
+interface Props {
+  item: resumeItemType;
+  index: number;
+  setCurrSelected: (index: number) => void;
+  setCurrItem: (index: number) => void;
+  currSelected: number;
+  currItem: number;
+}
+const SingleResumeItem: React.FC<Props> = ({
   item,
   index,
   setCurrSelected,
@@ -25,13 +36,13 @@ const SingleResumeItem = ({
       className={`block rounded cursor-pointer text-xs sm:text-sm w-24 px-3 sm:px-1 duration-300
 							sm:mx-0 sm:w-full text-center py-1 z-10 transition select-none hover:bg-blue-400 
 							sm:hover:bg-transparent duration ${cssForSectionHeading(index)} `}
-      id={item}
+      id={item.name}
       onClick={() => setCurrSelected(index)}
       onMouseEnter={(e) => setCurrItem(index)}
       onMouseLeave={() => setCurrItem(currSelected)}
       style={{ minWidth: "4rem" }}
     >
-      {item}
+      {item.name}
     </h3>
   );
 };
