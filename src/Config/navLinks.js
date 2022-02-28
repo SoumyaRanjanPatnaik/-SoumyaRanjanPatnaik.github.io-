@@ -21,7 +21,7 @@ const links = [
     name: "Contact",
     url: "/contact",
     id: "contact",
-    disbled: true,
+    disbled: false,
   },
   {
     name: "Blog",

@@ -9,11 +9,11 @@ const SingleEducation: React.FC<Props> = ({ item }) => {
     <div
       className={`${
         item.disabled && "hidden"
-      } relative flex flex-col justify-between items-start  w-full h-full
+      } relative flex flex-col justify-between items-start w-full h-full
 	 bg-white bg-opacity-60 rounded-lg shadow m-auto 
-	 transition-all duration-300 ease-in-out p-[2%] gap-4 group pb-6`}
+	 transition-all duration-300 ease-in-out p-[2%] gap-8 group pb-6`}
     >
-      <div className="flex lg:flex-col w-full items-center">
+      <div className="flex lg:flex-col gap-y-4 w-full items-center">
         <img
           src={item.logoUrl}
           alt=""
@@ -21,7 +21,7 @@ const SingleEducation: React.FC<Props> = ({ item }) => {
 		rounded-full bg-white p-1"
         />
         <div
-          className="flex flex-col justify-center w-full h-full px-4 gap-2 
+          className="flex flex-col justify-center w-full h-full px-4 gap-3 
 		text-gray-900"
         >
           <div className="leading-4">
@@ -36,7 +36,7 @@ const SingleEducation: React.FC<Props> = ({ item }) => {
             <p className="text-xs italic">{item.location}</p>
           </div>
           <div className="text-sm font-bold">
-            <p>	
+            <p>
               {item.type}: {item.grade}
               {item.type === "Percentage" && "%"}
             </p>

@@ -11,7 +11,7 @@ const Resume = () => {
     <section
       id="resume"
       className="absolute flex items-center justify-center h-screen px-2 
-      pt-20 pb-5 sm:px-9 bg-gradient-to-b from-gray-50 to-blue-50"
+      pt-20 pb-5 sm:px-9 bg-gradient-to-b from-white to-blue-50"
     >
       {/*Resume Glass Container*/}
       <div

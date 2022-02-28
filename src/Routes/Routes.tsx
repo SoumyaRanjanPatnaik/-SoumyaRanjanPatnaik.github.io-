@@ -7,6 +7,7 @@ import links from "../Config/navLinks";
 import { useState } from "react";
 import "./transitions.css";
 import { useEffect } from "react";
+import Contact from "../Components/Contact/Contact";
 const findIndex = (path) => {
   return links.findIndex((loc) => loc.url === path);
 };
@@ -38,6 +39,7 @@ const AppRoutes: React.FC = () => {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/resume" element={<Resume />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
       </CSSTransition>
