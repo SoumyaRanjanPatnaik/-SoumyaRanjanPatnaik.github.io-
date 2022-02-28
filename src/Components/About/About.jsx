@@ -63,11 +63,11 @@ const DownloadButton = () => {
     <a
       className={`flex group relative m-auto justify-center mt-5 bg-blue-600
       text-gray-50 font-bold py-2 px-4 rounded-lg w-full items-center transition  ${
-        !(downloadable || resumeLocation)
-          ? "cursor-not-allowed hover:bg-blue-200"
+        !downloadable
+          ? "hover:cursor-not-allowed hover:bg-blue-200"
           : "cursor-pointer hover:bg-blue-500 focus:outline-offset-2 focus:outline-1"
       } mb-2 `}
-      href={resumeLocation}
+      href={downloadable && resumeLocation}
     >
       <DownloadIcon />
       <span>Download Resume</span>

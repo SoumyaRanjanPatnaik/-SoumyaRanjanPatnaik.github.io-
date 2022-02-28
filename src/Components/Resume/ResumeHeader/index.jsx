@@ -12,7 +12,7 @@ const ResumeHeader = ({ selected, item }) => {
           Resume
         </h2>
         {/*Underline*/}
-        <div className="w-1/5 h-0 border-4 border-green-300 rounded-lg sm:w-1/2" />
+        <div className="w-1/5 h-0 border-4 border-blue-300 rounded-lg sm:w-1/2" />
       </div>
 
       <TabsContainer

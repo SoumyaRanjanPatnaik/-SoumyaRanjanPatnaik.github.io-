@@ -21,13 +21,13 @@ const links = [
     name: "Contact",
     url: "/contact",
     id: "contact",
-    disbled: false,
+    disbled: true,
   },
   {
     name: "Blog",
     url: "/blog",
     id: "blog",
-    disbled: false,
+    disbled: true,
   },
 ];
 export default links;

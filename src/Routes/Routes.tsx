@@ -3,7 +3,7 @@ import About from "../Components/About/About";
 import Home from "../Components/Home/Home";
 import Resume from "../Components/Resume/Resume";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
-import links from "../Config/links";
+import links from "../Config/navLinks";
 import { useState } from "react";
 import "./transitions.css";
 import { useEffect } from "react";

@@ -33,7 +33,9 @@ const SingleResumeItem: React.FC<Props> = ({
   };
   return (
     <h3
-      className={`block rounded cursor-pointer text-xs sm:text-sm w-24 px-3 sm:px-1 duration-300
+      className={`${
+        item.disabled && "hidden"
+      } rounded cursor-pointer text-xs sm:text-sm w-24 px-3 sm:px-1 duration-300
 							sm:mx-0 sm:w-full text-center py-1 z-10 transition select-none hover:bg-blue-400 
 							sm:hover:bg-transparent duration ${cssForSectionHeading(index)} `}
       id={item.name}

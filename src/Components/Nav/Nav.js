@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { FiMenu } from "react-icons/fi";
-import links from "../../Config/links";
+import links from "../../Config/navLinks";
 import SingleLink from "./SingleLink";
 import { Link } from "react-router-dom";
 import Icon from "../Icon/Icon";
@@ -87,15 +87,17 @@ const Navbar = () => {
           >
             {links.map((item, index) => {
               return (
-                <SingleLink
-                  className=""
-                  path={item.url}
-                  name={item.name}
-                  id={item.id}
-                  disabled={item.disbled}
-                  key={index}
-                  closeMenu={closeMenu}
-                />
+                (!item.disbled && (
+                  <SingleLink
+                    className=""
+                    path={item.url}
+                    name={item.name}
+                    id={item.id}
+                    disabled={item.disbled}
+                    key={index}
+                    closeMenu={closeMenu}
+                  />
+                )) || <div />
               );
             })}
           </ul>

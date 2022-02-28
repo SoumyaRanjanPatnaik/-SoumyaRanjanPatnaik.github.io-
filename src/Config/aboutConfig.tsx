@@ -1,8 +1,8 @@
 const aboutConfig = {
-  profilePic: "assets/profile.jpg",
+  profilePic: "assets/profile.webp",
   title: "About",
   resume: {
-    downloadable: false,
+    downloadable: true,
     resumeLocation: "assets/resume.pdf",
   },
   text: {},
