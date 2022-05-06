@@ -10,7 +10,7 @@ const SingleEducation: React.FC<Props> = ({ item }) => {
       className={`${
         item.disabled && "hidden"
       } relative flex flex-col justify-between items-start w-full h-full
-	 bg-white bg-opacity-60 rounded-lg shadow m-auto 
+	 bg-white bg-opacity-60 rounded-lg shadow scrollbar-thin
 	 transition-all duration-300 ease-in-out p-[2%] gap-8 group pb-6`}
     >
       <div className="flex lg:flex-col gap-y-4 w-full items-center">

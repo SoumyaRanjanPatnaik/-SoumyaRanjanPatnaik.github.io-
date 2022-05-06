@@ -3,7 +3,7 @@ export interface EducationType {
   url?: string;
   location: string;
   degree?: string;
-  course: string;
+  course?: string;
   grade: number;
   type: "CGPA" | "Percentage" | "GPA (out of 4.0)" | "GPA (out of 5.0)";
   rank?: number;
@@ -37,6 +37,17 @@ const education: EducationType[] = [
     type: "Percentage",
     startDate: "2018",
     endDate: "2020",
+    logoUrl: "/assets/notredame.webp",
+  },
+  {
+    school: "Notre Dame School",
+    url: "https://www.notredamedelhi.com/",
+    location: "Badarpur, New Delhi",
+    degree: "Matriculation",
+    grade: 85,
+    type: "Percentage",
+    startDate: "2017",
+    endDate: "2018",
     logoUrl: "/assets/notredame.webp",
   },
 ];

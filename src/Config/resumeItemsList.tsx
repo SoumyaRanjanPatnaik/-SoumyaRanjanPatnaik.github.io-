@@ -20,17 +20,17 @@ const resumeItems: resumeItemType[] = [
   {
     name: "Projects",
     component: <Projects />,
-    // disabled: true,
+    disabled: true,
   },
   {
     name: "Achievements",
     component: <div />,
-    // disabled: true,
+    disabled: true,
   },
   {
     name: "Publications",
     component: <div />,
-    // disabled: true,
+    disabled: true,
   },
 ];
 
